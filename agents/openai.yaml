@@ -1,0 +1,5 @@
+interface:
+  display_name: "Laser Art to FDM STL"
+  short_description: "Adapt flat artwork into printable FDM models"
+  default_prompt: "Use $laser-art-to-fdm-stl to turn this flat design into a reviewed, verified FDM-ready model."
+
