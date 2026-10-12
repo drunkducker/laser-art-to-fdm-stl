@@ -1,6 +1,6 @@
 ---
 name: laser-art-to-fdm-stl
-description: Convert laser-cut artwork, silhouettes, signs, layered panels, and flat reference images into dimensioned, reviewable, FDM-printable STL or 3MF designs. Use when adapting 2D art for 3D printing, repairing thin or disconnected decorative geometry, adding bases or joints, splitting oversized models, or validating print-ready meshes. Do not use for laser-only vector cleanup when no 3D-print result is requested.
+description: Convert laser-cut artwork, silhouettes, stencils, signs, layered panels, and flat reference images into dimensioned, reviewable, FDM-printable STL or 3MF designs. Use when adapting 2D art for 3D printing, making negative-space designs stencil-safe, repairing thin or disconnected decorative geometry, adding bases or joints, splitting oversized models, or validating print-ready meshes. Do not use for laser-only vector cleanup when no 3D-print result is requested.
 ---
 
 # Laser Art to FDM STL
@@ -10,10 +10,11 @@ Preserve the recognizable design while adapting it to the physical constraints o
 ## Choose the working mode
 
 - **Artwork conversion:** Start from an image, SVG, DXF, PDF, tracing, or laser-cut layout and build new printable geometry.
+- **Stencil-safe conversion:** Detect floating positive islands, propose material bridges across negative spaces, and obtain visual approval before changing the artwork.
 - **Print adaptation:** Start from STL, OBJ, 3MF, CAD, or slicer/G-code evidence and improve orientation, support use, size, strength, splitting, joints, or assembly.
 - **Review only:** Produce flat or 3D previews with measurements and stop before exporting printable meshes when the user asks to approve the design first.
 
-For artwork conversion, read [references/artwork-conversion.md](references/artwork-conversion.md). For splits, joints, fit, or support reduction, also read [references/assembly-and-fit.md](references/assembly-and-fit.md).
+For artwork conversion, read [references/artwork-conversion.md](references/artwork-conversion.md). For stencils or negative-space artwork, read [references/stencil-safe-conversion.md](references/stencil-safe-conversion.md). For splits, joints, fit, or support reduction, also read [references/assembly-and-fit.md](references/assembly-and-fit.md).
 
 ## Establish the design contract
 
